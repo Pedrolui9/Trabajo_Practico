@@ -4,51 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>primerapantalla</title>
-    <link rel="stylesheet" href="./style2.css">
+    <script src="./sonido_Menu.js" defer></script>
+    <script src="./funcion_pulsar.js" defer></script>
+    <link rel="stylesheet" href="./fondo.css">
+    <link rel="stylesheet" href="./boton.css">
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: url('./img-fondos-personajes/caratrula\ inicio\ pulse\ el\ boton\ star.png');
-            background-size: cover;
-            color: white;
-            font-size: 24px;
-            font-family: Arial, sans-serif;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            background-image: url("./img-fondos-personajes/caratrula\ inicio\ pulse\ el\ boton\ star.png");
         }
     </style>
-    <script src="./sonido_Menu.js" defer></script>
 </head>
 </head>
 <body> 
     <button id="toggleButton">🔇 Apagar sonido</button>
-    <audio id="audio" src="./sonido/Mortal Kombat Shaolin Monks - Intro Theme.MP3" autoplay></audio>
+    <audio id="audio" src="./sonido/Mortal Kombat Shaolin Monks - Intro Theme.MP3" autoplay ></audio>
 
-   <!--  <script>
-        const audio = document.getElementById("audio");
-        const button = document.getElementById("toggleButton");
-
- 
-        window.onload = () => {
-            audio.play().catch(error => console.log("Reproducción automática bloqueada"));
-            button.textContent = "🔇 Apagar sonido";
-        };
-
-        function toggleSound() {
-            if (audio.paused) {
-                audio.play();
-                button.textContent = "🔇 Apagar sonido";
-            } else {
-                audio.pause();
-                button.textContent = "🔊 Encender sonido";
-            }
-        }
-
-        button.addEventListener("click", toggleSound);
-    </script>  -->
-   <a href="index.html"><button class="boton">PULSE PARA EMPEZAR</button></a>
+  
+   <a href="index.html"><button class="boton" id="primerBoton">PULSE CUALQUIER TECLA PARA EMPEZAR</button></a>
+  
 </body>
 </html>
