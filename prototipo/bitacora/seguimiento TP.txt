@@ -1,0 +1,25 @@
+jueves06
+probando y viendo posibles interfaz para juegos y viendo algo sencillo pero funcional
+viernes06
+creacion de interfaz ya probando y editadno el fondo a gif para probar de fondo
+sabado 07
+probando comando de fondos para ajustar el fondo a la pantalla actual ajustando body y html al mimso tamanho
+domingo08
+probando comando de css y script para hermosear la opciones a futuro actualmente son solo una lista con posibles funciones 
+lunes 10/2 
+presente lo que ya pude realizar el profe me pidio hacer la interfaz en pencil como quedaria
+debo investigar como agregar fonts para el tipo de letra de mi pagina; estoy pensando en separar las opciones en un bloque diferente
+ya que solo quiero hacer una interfaz mas si es que me alcanza el tiempo; reducir tamanho del fondo demasiado pesado 
+martes 11 estuvimos sin lux media hora casi nos fuimos el profe mboreo y al final estuvimos viendo forml]ulario en html , usando solo localhost
+sin tocar php
+miercoles 12 seguimos tocando mas formulario
+jueves 13 
+estuve investignado algunas funcion para colcoar sonido al mover el mouse sobre la opciones
+viernes 14 
+estuve realizando probable protoitpo , no encontre forma de colocar fondo al pencil use paint de  prueba 
+lunes 17 
+el profe ya aviso que jueves se expone tp hasta prototipos sin programacion , trabaje en 2 posibles prototipo y empiezo a armar mi pdf/ppt para mi presentacion 
+
+
+
+

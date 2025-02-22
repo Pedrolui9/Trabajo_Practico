@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz Central</title>
+    <link rel="stylesheet" href="./fondo.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Shafarik&display=swap" rel="stylesheet">
+    <script src="./sonido_Menu.js" defer></script>
+    <script src="./sonido.js"></script> 
+</head>
+<body>
+    <button id="toggleButton">🔇 Apagar sonido</button>
+    <audio id="audio" src="./sonido/Mortal Kombat Shaolin Monks - Menu Theme.MP3" autoplay></audio>
+    <audio id="sonido" src="./sonido/stab-f-01-brvhrtz-224599.mp3"></audio>
+    <ul onmouseover="reproSong()" class="menu">
+        <li ><a href="#">Un Jugador</a></li>
+        <li ><a href="#">Ko-oP</a></li>
+        <li ><a href="#">Cargar Partida</a></li>
+        <li ><a href="./Opciones.html">OpcioneS</a></li>
+        <li ><a href="#">KontenidO</a></li>
+    </ul>
+   <!--  <script>
+        // Función para reproducir el sonido
+        function reprosong() {
+            var sonido = document.getElementById("sonido");
+            sonido.currentTime = 0; // Reinicia el sonido al principio
+            sonido.play(); // Reproduce el sonido
+        }
+    </script> -->
+
+
+
+</body>
+</html>
