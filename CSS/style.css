@@ -1,0 +1,42 @@
+   
+.menu { 
+    transform: translate(-50%, -50%); 
+    padding: 20px;
+    border-radius: 20%;
+    text-align: center;
+    list-style-type: none; 
+    width: 300px; 
+    position: absolute;
+    top: 53%;  
+    left: 33%;
+    
+        }
+
+.menu li {
+    margin: 10px 0;
+    font-size: 40px;
+    font-family: "Grechen Fuemen", serif;
+    font-weight: bold;
+    transform: scale(1.5)
+}
+
+.menu li a {
+    color: rgb(216, 193, 193);
+    text-decoration: none;
+    padding:9px;
+    display: block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+
+}
+
+.menu li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-style: initial;
+    border-radius: 45px;
+    transform: scale(2)
+
+    ;}
+
+
+    

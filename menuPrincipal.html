@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interfaz Central</title>
-    <link rel="stylesheet" href="./fondo.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./CSS/fondo.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Shafarik&display=swap" rel="stylesheet">
-    <script src="./sonido_Menu.js" defer></script>
-    <script src="./sonido.js"></script> 
+    <link rel="stylesheet" href="./CSS/ventanaFlotante.css">
+    <script src="./Js/sonido_Menu.js" defer></script>
+    <script src="./Js/sonido.js"></script> 
+    <script src="./Js/abrirVentana.js"></script>
     <style>
         body {
             background-image: url("./img-fondos-personajes/primera\ interfaz\ posible.png");
@@ -17,16 +19,24 @@
 </head>
 <body>
     <button id="toggleButton">🔇 Apagar sonido</button>
-    <audio id="audio" src="./sonido/Mortal Kombat Shaolin Monks - Menu Theme.MP3" autoplay></audio>
+    <audio id="audio" src="./sonido/Mortal Kombat Shaolin Monks - Menu Theme.MP3" autoplay loop></audio>
     <audio id="sonido" src="./sonido/tap-notification-180637.mp3"></audio>
+    
     <ul onmouseover="reproSong()" class="menu">
-        <li ><a href="#">Un Jugador</a></li>
+        <li><a onclick="abrirVentana()">Un Jugador</a></li>
         <li ><a href="#">Ko-oP</a></li>
         <li ><a href="#">Cargar Partida</a></li>
         <li ><a href="./Opciones.html">OpcioneS</a></li>
         <li ><a href="#">KontenidO</a></li>
     </ul>
+    <div class="ventana" id="v_flotante">
+        <button class="cerrar" onclick="cerrarVentana()">Volver</button>
+        <video controls id="video">
+            <source src="./videos/Mortal Kombat Shaolin Monks  Intro 4K Remastered with Machine Learning AI.mp4" type="video/mp4">
+        </video>
 
+
+    </div>
 
 </body>
 </html>

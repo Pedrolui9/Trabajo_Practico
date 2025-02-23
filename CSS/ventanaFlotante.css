@@ -1,0 +1,29 @@
+.ventana {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none; 
+    justify-content: center;
+    align-items: center;
+}
+.cerrar {
+    font-family: "Grechen Fuemen", serif;
+    color: rgb(216, 193, 193);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    padding: 10px 20px;
+    font-size: 30px;
+    cursor: pointer;
+     
+}
+
+video {
+    max-width: 100%;
+    max-height: 100%;
+}
