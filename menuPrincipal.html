@@ -11,6 +11,7 @@
     <script src="./Js/sonido_Menu.js" defer></script>
     <script src="./Js/sonido.js"></script> 
     <script src="./Js/abrirVentana.js"></script>
+    <script src="./Js/abrirVentanaOpciones.js"></script>
     <style>
         body {
             background-image: url("./img-fondos-personajes/primera\ interfaz\ posible.png");
@@ -26,7 +27,7 @@
         <li><a onclick="abrirVentana()">Un Jugador</a></li>
         <li ><a href="#">Ko-oP</a></li>
         <li ><a href="#">Cargar Partida</a></li>
-        <li ><a href="./Opciones.html">OpcioneS</a></li>
+        <li ><a onclick="abrirOpciones()">OpcioneS</a></li>
         <li ><a href="#">KontenidO</a></li>
     </ul>
     <div class="ventana" id="v_flotante">
@@ -35,6 +36,17 @@
             <source src="./videos/Mortal Kombat Shaolin Monks  Intro 4K Remastered with Machine Learning AI.mp4" type="video/mp4">
         </video>
 
+
+    </div>
+    <div class="ventana" id="v_Opciones">
+        <BUtton class="cerrar" onclick="cerrarOpciones()">Volver</BUtton>
+        <img src="./img-fondos-personajes/menuOpciones.png" alt="" class="fondoOpciones">
+        <div>
+            <label>
+            <input type="checkbox" id="musicaFondo"> Activar música de fondo
+            </label>
+
+    </div>
 
     </div>
 
