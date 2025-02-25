@@ -4,10 +4,6 @@
     100% { opacity: 1; }
 }
 
-
-
-
-
 .boton {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
@@ -15,7 +11,7 @@
     position: absolute;
     top: 80%;  
     left: 40%;
-    background-color: black;
+    background-color: transparent;
     border: none;
     cursor: pointer;
     animation: parpadeo 1s infinite;

@@ -6,8 +6,10 @@
     <title>Interfaz Central</title>
     <link rel="stylesheet" href="./CSS/fondo.css">
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/boton.css">
     <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Shafarik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/ventanaFlotante.css">
+    <link rel="stylesheet" href="./Js/mensajesflotantes.js">
     <script src="./Js/sonido_Menu.js" defer></script>
     <script src="./Js/sonido.js"></script> 
     <script src="./Js/abrirVentana.js"></script>
@@ -19,39 +21,43 @@
     </style>
 </head>
 <body>
-    <button id="toggleButton">🔇 Apagar sonido</button>
-    <audio id="audio" src="./sonido/Mortal Kombat Shaolin Monks - Menu Theme.MP3" ></audio>
+    <button id="toggleButton" class="cerrar">🔇 Apagar sonido</button>
+    <audio id="audio" src="./sonido/Mortal Kombat Shaolin Monks - Menu Theme.MP3" type="audio/mp3" autoplay loop></audio>
     <audio id="sonido" src="./sonido/tap-notification-180637.mp3"></audio>
     
     <ul onmouseover="reproSong()" class="menu">
         <li><a onclick="abrirVentana()">Un Jugador</a></li>
-        <li ><a href="#">Ko-oP</a></li>
-        <li ><a href="#">Cargar Partida</a></li>
+        <li ><a onclick="mensajeFlotante('opcion1')">Ko-oP</a></li>
+        <li ><a onclick="mensajeFlotante('opcion2')">Cargar Partida</a></li>
         <li ><a onclick="abrirOpciones()">OpcioneS</a></li>
-        <li ><a href="#">KontenidO</a></li>
+        <li ><a onclick="mensajeFlotante('opcion3')">KontenidO</a></li>
     </ul>
     <div class="ventana" id="v_flotante">
         <button class="cerrar" onclick="cerrarVentana()">Volver</button>
         <video controls id="video">
-            <source src="./videos/Mortal Kombat Shaolin Monks  Intro 4K Remastered with Machine Learning AI.mp4" type="video/mp4">
+            <source src="./videos/Mortal Kombat Shaolin Monks  Intro 4K Remastered with Machine Learning AI.mp4" type="video/mp4" >
         </video>
 
         
     </div>
     <div class="ventana2" id="v_Opciones">
         <BUtton class="cerrar" onclick="cerrarOpciones()">Volver</BUtton>
-        <div>
-            <input type="checkbox" id="musicaFondo" class="toggle" role="switch">
-            
-            <label for="musicaFondo" class="toggle"> </label>
-            
-            <input type="checkbox" id="sonidoFondo" class="toggle2" role="switch">
-            <label for="sonidoFondo" class="toggle2"></label>
-            
-        </div>
         
     </div>
     
+    <div>
+        <input type="checkbox" id="musicaFondo"  role="switch">
+        
+        <label for="musicaFondo" > </label>
+        
+        <input type="checkbox" id="sonidoFondo" class="toggle2" role="switch">
+        <label for="sonidoFondo" class="toggle2"></label>
+        
+    </div>
+
+    <div style="display: none;" id="mensajes">
+
+    </div>
     
 </body>
 </html>
