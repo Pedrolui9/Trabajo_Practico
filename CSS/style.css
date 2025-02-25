@@ -34,23 +34,78 @@
     background-color: rgba(0, 0, 0, 0.3);
     border-style: initial;
     border-radius: 45px;
-    transform: scale(2)
-
-    ;}
+    transform: scale(2) ;}
 
 
 
-label {
-    color: rgb(0, 0, 255);
-    transform: translate(-50%, -50%); 
-    padding: 20px;
-    border-radius: 20%;
-    text-align: center;
-    list-style-type: none; 
-    width: 300px; 
+.toggle2 {
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+    background: #aaa;
+    border-radius: 100px;
     position: absolute;
-    top: 53%;  
-    left: 33%;
-    font-size: 40px;
- }
-    
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    margin: 450px;
+}
+#sonidoFondo:checked~ .toggle2 {
+    background: #61a0ff;
+}
+.toggle2:after{
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    border-radius: 100px;
+    top: 4px;
+    left: 5px;
+    transition: 0.3s;
+
+}
+#sonidoFondo:checked~ .toggle2:after{
+    left: 28px;
+}
+#sonidoFondo {
+    display: none;
+}
+
+
+
+.toggle {
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+    background: #aaa;
+    border-radius: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    margin: 450px;
+}
+#musicaFondo:checked~ .toggle {
+    background: #61a0ff;
+}
+.toggle:after{
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    border-radius: 100px;
+    top: 4px;
+    left: 5px;
+    transition: 0.3s;
+
+}
+#musicaFondo:checked~ .toggle:after{
+    left: 28px;
+}
+#musicaFondo {
+    display: none;
+}
+
+

@@ -20,7 +20,7 @@
 </head>
 <body>
     <button id="toggleButton">🔇 Apagar sonido</button>
-    <audio id="audio" src="./sonido/Mortal Kombat Shaolin Monks - Menu Theme.MP3" autoplay loop></audio>
+    <audio id="audio" src="./sonido/Mortal Kombat Shaolin Monks - Menu Theme.MP3" ></audio>
     <audio id="sonido" src="./sonido/tap-notification-180637.mp3"></audio>
     
     <ul onmouseover="reproSong()" class="menu">
@@ -36,19 +36,19 @@
             <source src="./videos/Mortal Kombat Shaolin Monks  Intro 4K Remastered with Machine Learning AI.mp4" type="video/mp4">
         </video>
 
-
+        
     </div>
-    <div class="ventana" id="v_Opciones">
+    <div class="ventana2" id="v_Opciones">
         <BUtton class="cerrar" onclick="cerrarOpciones()">Volver</BUtton>
-        <img src="./img-fondos-personajes/menuOpciones.png" alt="" class="fondoOpciones">
-        <div>
-            <label>
-            <input type="checkbox" id="musicaFondo"> Activar música de fondo
-            </label>
 
     </div>
-
+    
+    <div>
+        <input type="checkbox" id="musicaFondo" class="toggle" role="switch">
+        
+        <label for="musicaFondo" class="toggle"> </label>
+        <input type="checkbox" id="sonidoFondo" class="toggle2" role="switch">
+        <label for="sonidoFondo" class="toggle2"></label>
     </div>
-
 </body>
 </html>
