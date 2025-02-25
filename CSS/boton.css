@@ -1,3 +1,13 @@
+@keyframes parpadeo {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+
+
+
 .boton {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
@@ -8,6 +18,9 @@
     background-color: black;
     border: none;
     cursor: pointer;
+    animation: parpadeo 1s infinite;
     
 
 }
+
+
