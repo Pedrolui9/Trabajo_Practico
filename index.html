@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>primerapantalla</title>
-    <script src="./Js/sonido_Menu.js" defer></script>
-    <script src="./Js/funcion_pulsar.js" defer></script>
     <link rel="stylesheet" href="./CSS/fondo.css">
     <link rel="stylesheet" href="./CSS/boton.css">
     <style>
@@ -15,12 +13,15 @@
     </style>
 </head>
 </head>
-<body> 
-    <button id="toggleButton">🔇 Apagar sonido</button>
-    <audio id="audio" src="./sonido/Mortal Kombat Shaolin Monks - Intro Theme.MP3" autoplay ></audio>
+<body>
 
-  
-   <a href="menuPrincipal.html"><button class="boton" id="primerBoton">PULSE CUALQUIER TECLA PARA EMPEZAR</button></a>
-  
+    <button type="button" id="toggleButton">🔇 Apagar sonido</button>
+    <audio id="audio" src="./sonido/Mortal Kombat Shaolin Monks - Intro Theme.MP3" autoplay></audio>
+
+
+    <a href="menuPrincipal.html"><button class="boton" id="primerBoton">PULSE CUALQUIER TECLA PARA EMPEZAR</button></a>
+
+    <script src="./Js/sonido_Menu.js" defer></script>
+    <script src="./Js/funcion_pulsar.js" defer></script>
 </body>
 </html>
