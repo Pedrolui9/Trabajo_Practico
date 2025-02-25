@@ -37,7 +37,6 @@
     transform: scale(2) ;}
 
 
-
 .toggle2 {
     display: inline-block;
     width: 55px;
@@ -45,13 +44,14 @@
     background: #aaa;
     border-radius: 100px;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 18%;
+    left: -4%;
     cursor: pointer;
     margin: 450px;
 }
 #sonidoFondo:checked~ .toggle2 {
-    background: #61a0ff;
+    background: #be2e02;
+    
 }
 .toggle2:after{
     position: absolute;
@@ -81,13 +81,13 @@
     background: #aaa;
     border-radius: 100px;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 20px;
+    left: -4%;
     cursor: pointer;
     margin: 450px;
 }
 #musicaFondo:checked~ .toggle {
-    background: #61a0ff;
+    background: #be2e02;
 }
 .toggle:after{
     position: absolute;

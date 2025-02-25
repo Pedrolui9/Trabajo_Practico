@@ -15,14 +15,3 @@
 
 //  button.addEventListener("click", toggleSound);
 
-const musicaDeMenu =  document.getElementById("musicaFondo");
-const musicamp4 = document.getElementById("audio");
-
-musicaDeMenu.addEventListener( function() {
-    if (this.checked) {
-        musicaDeMenu.play();}
-    else {
-        musicaDeMenu.pause();
-        musicaDeMenu.curretTime = 0;
-    }
-})
