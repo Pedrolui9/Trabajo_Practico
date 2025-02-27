@@ -20,11 +20,10 @@
     </style>
 </head>
 <body>
-    <button id="toggleButton" class="cerrar">🔇 Apagar sonido</button>
     <audio id="audio" src="./sonido/musicafondoMenu.mp3" type="audio/mp3" ></audio>
     <audio id="sonido" src="./sonido/tap-notification-180637.mp3" type="audio/mp3"></audio>
     
-    <ul onmouseover="reproSong()" class="menu">
+    <ul onmouseover="reproSong()" class="menu" id="preuba">
         <li><a onclick="abrirVentana()">Un Jugador</a></li>
         <li ><a onclick="mensajeFlotante('opcion1')">Ko-oP</a></li>
         <li ><a onclick="mensajeFlotante('opcion2')">Cargar Partida</a></li>
@@ -52,8 +51,9 @@
         </div>
     
     </div>
+
     <div class="boton" id="mensajes">
-        <p onclick="mensajeFlotante('opcion1')"></p>
+        
     </div>
     
     
