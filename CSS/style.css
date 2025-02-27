@@ -110,16 +110,14 @@
 
 
 .menuOpcion {
-    
+    display: block;
     transform: translate(-50%, -50%); 
-    padding: 20px;
     border-radius: 20%;
     text-align: center;
     list-style-type: none; 
-    width: 300px; 
     position: absolute;
-    top: 59%;  
-    left: 73%;
+    top: 57%;  
+    left: 42%;
     
 }
 
@@ -134,10 +132,6 @@
 .menuOpcion li a {
     color: rgb(216, 193, 193);
     text-decoration: none;
-    padding:9px;
-    display: block;
-    transition: background-color 0.3s;
-    cursor: pointer;
 
 }
 
