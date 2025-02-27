@@ -10,10 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Shafarik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/ventanaFlotante.css">
     <link rel="stylesheet" href="./Js/mensajesflotantes.js">
-    <script src="./Js/sonido_Menu.js" defer></script>
-    <script src="./Js/sonido.js"></script> 
     <script src="./Js/abrirVentana.js"></script>
     <script src="./Js/abrirVentanaOpciones.js"></script>
+    <script src="./Js/menu_Musica.js"></script>
     <style>
         body {
             background-image: url("./img-fondos-personajes/primera\ interfaz\ posible.png");
@@ -22,8 +21,8 @@
 </head>
 <body>
     <button id="toggleButton" class="cerrar">🔇 Apagar sonido</button>
-    <audio id="audio" src="./sonido/Mortal Kombat Shaolin Monks - Menu Theme.MP3" type="audio/mp3" autoplay loop></audio>
-    <audio id="sonido" src="./sonido/tap-notification-180637.mp3"></audio>
+    <audio id="audio" src="./sonido/musicafondoMenu.mp3" type="audio/mp3" ></audio>
+    <audio id="sonido" src="./sonido/tap-notification-180637.mp3" type="audio/mp3"></audio>
     
     <ul onmouseover="reproSong()" class="menu">
         <li><a onclick="abrirVentana()">Un Jugador</a></li>
@@ -43,21 +42,20 @@
     <div class="ventana2" id="v_Opciones">
         <BUtton class="cerrar" onclick="cerrarOpciones()">Volver</BUtton>
         
+        <div>
+            <input type="checkbox" id="musicaFondo" class="toggle" role="switch">
+            <label for="musicaFondo" class="toggle" > </label>
+            
+            <input type="checkbox" id="sonidoFondo" class="toggle2" role="switch">
+            <label for="sonidoFondo" class="toggle2"></label>
+            
+        </div>
+    
+    </div>
+    <div class="boton" id="mensajes">
+        <p onclick="mensajeFlotante('opcion1')"></p>
     </div>
     
-    <div>
-        <input type="checkbox" id="musicaFondo"  role="switch">
-        
-        <label for="musicaFondo" > </label>
-        
-        <input type="checkbox" id="sonidoFondo" class="toggle2" role="switch">
-        <label for="sonidoFondo" class="toggle2"></label>
-        
-    </div>
-
-    <div style="display: none;" id="mensajes">
-
-    </div>
     
 </body>
 </html>

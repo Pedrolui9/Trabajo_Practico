@@ -1,18 +1,18 @@
 function mensajeFlotante(opcion) {
-    const mensajeDiv = document.getElementById("mensajes");
+    const mensajeDiv = document.getElementById("preuba");
     const listaMensajes = {
         "opcion1": "CONECTE OTRO DUAL SOCHK",
         "opcion2": "NO SE ENCONTRARON PARTIDAS GUARDADAS",
         "opcion3": "AUN NO SE DESBLOQUEO CONTENIDO JUGABLE"
     };
-    if (opcion === "") {
+    if (!opcion || !listaMensajes[opcion]) {
         mensajeDiv.style.display = "none";
         return;
     }
-    if (mensajeDiv.style.display === "block" && mensajeDiv.innerText === listaMensajes[opcion]) {
+    if (mensajeDiv.style.display === "block" && mensajeDiv.textContent === listaMensajes[opcion]) {
         mensajeDiv.style.display = "none";
     } else {
-        mensajeDiv.innerText = listaMensajes[opcion]
+        mensajeDiv.textContent = listaMensajes[opcion]
         mensajeDiv.style.display = "block";
     }
 }
