@@ -9,10 +9,6 @@
     <link rel="stylesheet" href="./CSS/boton.css">
     <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Shafarik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/ventanaFlotante.css">
-    <link rel="stylesheet" href="./Js/mensajesflotantes.js">
-    <script src="./Js/abrirVentana.js"></script>
-    <script src="./Js/abrirVentanaOpciones.js"></script>
-    <script src="./Js/menu_Musica.js"></script>
     <style>
         body {
             background-image: url("./img-fondos-personajes/primera\ interfaz\ posible.png");
@@ -24,11 +20,11 @@
     <audio id="sonido" src="./sonido/tap-notification-180637.mp3" type="audio/mp3"></audio>
     
     <ul onmouseover="reproSong()" class="menu" id="preuba">
-        <li><a onclick="abrirVentana()">Un Jugador</a></li>
-        <li ><a onclick="mensajeFlotante('opcion1')">Ko-oP</a></li>
-        <li ><a onclick="mensajeFlotante('opcion2')">Cargar Partida</a></li>
-        <li ><a onclick="abrirOpciones()">OpcioneS</a></li>
-        <li ><a onclick="mensajeFlotante('opcion3')">KontenidO</a></li>
+        <li><a onclick="abrirVentana(), mostrarMensaje()">Un Jugador</a></li>
+        <li ><a onclick="mostrarMensaje(1)">Ko-oP</a></li>
+        <li ><a onclick="mostrarMensaje(2)">Cargar Partida</a></li>
+        <li ><a onclick="abrirOpciones(), mostrarMensaje()">OpcioneS</a></li>
+        <li ><a onclick="mostrarMensaje(3)">KontenidO</a></li>
     </ul>
     <div class="ventana" id="v_flotante">
         <button class="cerrar" onclick="cerrarVentana()">Volver</button>
@@ -47,15 +43,23 @@
             
             <input type="checkbox" id="sonidoFondo" class="toggle2" role="switch">
             <label for="sonidoFondo" class="toggle2"></label>
-            
         </div>
-    
-    </div>
-
-    <div class="boton" id="mensajes">
         
+        <div>
+            <ul class="menuOpcion">
+                <li><a href="">Encender/Apagar MusicA</a></li><br><br><br>
+                <li><a href="">Encender/Apagar SonidO</a></li>
+    
+            </ul>
+        </div>
     </div>
     
+    <p class="boton" id="mensaje"></p>
     
+    
+    <script src="./Js/abrirVentana.js"></script>
+    <script src="./Js/abrirVentanaOpciones.js"></script>
+    <script src="./Js/menu_Musica.js"></script>
+    <script src="./Js/mensajesflotantes.js"></script>
 </body>
 </html>
