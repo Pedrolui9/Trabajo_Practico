@@ -38,7 +38,7 @@ function reproSong() {
 function eventos2() {
 
     document.getElementById("sonidoFondo").addEventListener("change", function() {
-        const audio2 = document.getElementById("sonido");
+         
         if (this.checked) {
             musicaActiva = true;
             console.log("Música de fondo activada");
