@@ -22,7 +22,8 @@ function eventos() {
     });
 }
 
-
+//no lo intenten en casa
+//funcion que contiene otra funcion (apagar y prender sonido del menu)
 let musicaActiva = false; 
 
 function reproSong() {
