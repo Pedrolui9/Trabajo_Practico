@@ -108,30 +108,3 @@
     display: none;
 }
 
-
-.menuOpcion {
-    display: block;
-    transform: translate(-50%, -50%); 
-    border-radius: 20%;
-    text-align: center;
-    list-style-type: none; 
-    position: absolute;
-    top: 57%;  
-    left: 42%;
-    
-}
-
-.menuOpcion li {
-    margin: 10px 0;
-    font-size: 40px;
-    font-family: "Grechen Fuemen", serif;
-    font-weight: bold;
-    transform: scale(1.5)
-}
-
-.menuOpcion li a {
-    color: rgb(216, 193, 193);
-    text-decoration: none;
-
-}
-
